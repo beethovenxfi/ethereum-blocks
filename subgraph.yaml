@@ -6,11 +6,11 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: BeethovenxToken
-    network: fantom
+    network: optimism
     source:
-      address: "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83"
-      abi: WFTM
-      startBlock: 1000000
+      address: "0x17590C13203315af2082d7Cc8B29ddc56A3Ed7C5"
+      abi: BeethovenxToken
+      startBlock: 5304055
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -18,8 +18,8 @@ dataSources:
       entities:
         - Token
       abis:
-        - name: WFTM
-          file: ./abis/WFTM.json
+        - name: BeethovenxToken
+          file: ./abis/BeethovenxToken.json
       blockHandlers:
         - handler: handleBlock
       file: ./src/mappings/blocks.ts
